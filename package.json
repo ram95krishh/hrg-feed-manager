@@ -1,0 +1,38 @@
+{
+  "name": "hrg-feed-manager",
+  "version": "1.0.0",
+  "description": "Service to handle users and content of HRG Feed",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ram95krishh/hrg-feed-manager.git"
+  },
+  "author": "Ramakrishnan CS",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ram95krishh/hrg-feed-manager/issues"
+  },
+  "homepage": "https://github.com/ram95krishh/hrg-feed-manager#readme",
+  "dependencies": {
+    "async": "^3.1.1",
+    "body-parser": "^1.19.0",
+    "config": "^3.2.5",
+    "cors": "^2.8.5",
+    "debug": "^4.1.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "joi": "^14.3.1",
+    "mongoose": "^5.9.1",
+    "morgan": "^1.9.1",
+    "node-fetch": "^2.6.0",
+    "ramda": "^0.27.0",
+    "redis": "^3.0.2",
+    "request": "^2.88.2",
+    "winston": "^3.2.1",
+    "winston-context": "0.0.7",
+    "winston-transport": "^4.3.0"
+  }
+}
