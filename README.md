@@ -120,9 +120,6 @@ This project uses a number of open source projects/libraries, some of which are 
  - Add Swagger endpoints returning swagger JSONs for API Reference
  - Add Documentation for code using [JSDoc]
 
-
-# Hakunamata, have a great day!
-
    [Express]: <https://github.com/expressjs/express>
    [mongoose]: <https://github.com/Automattic/mongoose>
    [bcrypt]: <https://github.com/kelektiv/node.bcrypt.js>
