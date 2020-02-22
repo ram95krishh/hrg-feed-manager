@@ -59,20 +59,24 @@ https://jsonplaceholder.typicode.com/comments using...
 #### Objective 2.a
 # 
 
-    `localhost:7600/users/login`        -       **POST**
+    ```
+    localhost:7600/users/login`        -       **POST**
+    ```
     
-    **Request Body**
+**Request Body**
     ```
     {
         "username": [username],
         "password": [reverse-of-email]
     }
     ```
-    and to logout, use token obtained in login as Bearer token in Headers and call
+and to logout, use token obtained in login as Bearer token in Headers and call
 
-    `localhost:7600/users/logout`        -       **GET**
+    ```
+    localhost:7600/users/logout        -       **GET**
 
-    `localhost:7600/users/logout-all`    -       **GET**        // to invalidate all tokens
+    localhost:7600/users/logout-all    -       **GET**        // to invalidate all tokens
+    ```
     
 ### Tech
 
