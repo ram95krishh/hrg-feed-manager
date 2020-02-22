@@ -4,7 +4,7 @@
 The HRG Feed Manager Service **(hrg-feed-manager)** manages onboarding HRG Feed users, their posts and comments into a Mongo backend. To clone this project...
 
 ```sh
-    git clone https://github.com/ram95krishh/hrg-feed-manager.git
+    $ git clone https://github.com/ram95krishh/hrg-feed-manager.git
 ```
 
 ### Features!
