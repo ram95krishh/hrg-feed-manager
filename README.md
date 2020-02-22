@@ -54,30 +54,53 @@ https://jsonplaceholder.typicode.com/comments using...
 ```
 ## API Reference...
 
-1. To get Auth Token to access all other endpoints
-
-#### Objective 2.a
-# 
-
-    ```
-    localhost:7600/users/login`        -       **POST**
-    ```
+To get Auth Token to access all other endpoints
+#### Objective 2.a (login and logout)
+```
+    localhost:7600/users/login          - POST
     
-**Request Body**
-    ```
+    Payload:
     {
         "username": [username],
         "password": [reverse-of-email]
     }
-    ```
-and to logout, use token obtained in login as Bearer token in Headers and call
-
-    ```
-    localhost:7600/users/logout        -       **GET**
-
-    localhost:7600/users/logout-all    -       **GET**        // to invalidate all tokens
-    ```
     
+    Returns : Jwt Token as String
+```
+And to logout, use token obtained in login as Bearer token in Headers and call
+```
+    localhost:7600/users/logout         - GET
+    localhost:7600/users/logout-all     - GET   // to invalidate all tokens
+```
+***Note** - For all preceding endpoint the token needs to be used as a Bearer Token in all the api call headers
+
+#### Objective 2.b (To fetch user details)
+```
+    localhost:7600/users/my-info        - GET
+```
+
+#### Objective 2.c (To fetch user posts)
+```
+    localhost:7600/posts                - GET
+```
+
+#### Objective 2.d (To fetch all users)
+```
+    localhost:7600/users/get-all        - GET
+    Returns:
+        200 - All Users for Admins,
+        401 - For unauthorized users & Viewers
+```
+
+#### Objective 2.e (To fetch all posts)
+```
+    localhost:7600/posts/get-all        - GET
+    Returns:
+        200 - All Posts for Admins,
+        401 - For unauthorized users & Viewers
+```
+
+
 ### Tech
 
 This project uses a number of open source projects/libraries, some of which are listed here:
