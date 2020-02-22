@@ -37,8 +37,8 @@ The scripts can be found in the /scripts folder of the project.
 ```
         $ cd scripts
 ```
-- Onboards all users from the source - https://jsonplaceholder.typicode.com/users using the command...
-##### Objective 1.a
+
+##### Objective 1.a (Onboards all users)
 # 
 ```sh
         $ sh onboard_users.sh
@@ -47,7 +47,7 @@ The scripts can be found in the /scripts folder of the project.
 https://jsonplaceholder.typicode.com/posts &
 https://jsonplaceholder.typicode.com/comments using...
 
-#### Objective 1.b
+#### Objective 1.b (Onboards all posts with comments into respective user DBs)
 # 
 ```sh
         $ sh inject_posts.sh
